@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TASARIM</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="logo"><h4>WEB TASARIM</h4></div>
+        <ul class="nav-linkler">
+            <li><a href="index.html">HTML</a></li>
+            <li><a href="javas.html">JAVASCRIPT</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="hakkimda.html">HAKKIMDA</a></li>
+        </ul>
+        <div class="hakkimda">Kimim Ben???</div>
+        <div class="res-nav">
+            <div class="satir-1"></div>
+            <div class="satir-2"></div>
+            <div class="satir-3"></div>
+        </div>
+    </nav>
+    <div class="icerik container">
+        <h3>VERİ TİPLERİ</h3>
+        <table>
+            <tr>
+                <td>Number</td>
+                <td>:</td>
+                <td>number veri tipi tamsayı ve ondalık sayıları temsil eder. Toplama, çıkarma, çarpma, bölme vs. gibi bir çok matematiksel işlem bu veri tipinde yapılabilir. <strong>Infinity, -Infinity, NaN</strong> gibi değerlerde alabilir.</td>
+            </tr>
+            <tr>
+                <td>BigInt</td>
+                <td>:</td>
+                <td>Javascriptte Number veri tipinin temsil edebileceği sayılar <strong> 2<sup>53</sup>-1 ile -2<sup>53</sup>-1</strong> aralığındadır. Bu aralık dışında olan sayıları temsil etmek için bigint veri tipi kullanılır. <code>const bigInt=123456789123456789123456789123456789<strong>n</strong></code> şeklinde tanımlanır. Sayının sonuna eklenen <strong>"n"</strong> harfi bigint olduğunu gösterir. Bigint ile yapılan işlemler Number veri tipine göre çok daha yavaş olduğundan zorunlu olmadıkça kullanılmamalıdır.
+                </td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>:</td>
+                <td>Metin değerlerini saklamak için kullanılabilir. <strong>" ", ' ' veya ` `</strong> işaretlerinin içerisine yazılan değerler string veri tipindedir.</td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>:</td>
+                <td>Boolean veri tipi sadece iki değer alır. <strong>true, false</strong></td>
+            </tr>
+            <tr>
+                <td>null, undefined</td>
+                <td>:</td>
+                <td>Null ve undefined var olmayan bir veri tipini ifade etmek için kullanılır. </td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td>:</td>
+                <td>Object nesneleri ifade eder. Referans veri tipidir. Yukarıda belirtilen diğer veri tipleri ise primitive(ilkel) veri tipleridir.</td>
+            </tr>
+        </table>
+        <h3>MATEMATİKSEL OPERATÖRLER</h3>
+        <table>
+            <tr>
+                <td>+,-,*,/</td>
+                <td>:</td>
+                <td>Sırasıyla toplama, çıkarma, çarpma ve bölme işlemi yapan operatörlerdir. Number veri tipine uygulanırlar. Ayrıca "+" operatörü String veri tipine uygulanırsa iki stringi birleştirip tek string yapar.</td>
+            </tr>
+            <tr>
+                <td>%,**</td>
+                <td>:</td>
+                <td>% operatörü mod almak için kullanılır. <code>(5%2);</code> işleminin sonucu "1" dir.
+                <p>** operatörü ise üslü sayıları ifade eder. <code>5<sup>**</sup>2</code> işleminin sonucu "25" dir.</p></td>
+            </tr>
+            <tr>
+                <td>++,--</td>
+                <td>:</td>
+                <td>Bu operatörlar sayı değerini bir artırmak/azaltmak için kullanılır. <code>let x=1; x++;</code> işlemi x değerini 2 yapar. </td>
+            </tr>
+        </table>
+        <h3>MANTIKSAL OPERATÖRLER</h3>
+        <table>
+            <tr>
+                <td>|| (OR)</td>
+                <td>:</td>
+                <td>Java,C# gibi programlama dillerinde iki boolean değer üzerinde işlem yapar. Javascriptte ise bu işleme ek olarak ilk (truthy) doğru değeri bulmak için de kullanılabilir.
+                    <p>Falsy (yanlış) dönen değerler: <strong>false,0,"",null,undefined,Nan</strong> değerlerdir.. Bunun haricindeki tüm değerler javascriptte truthy olarak değerlendirlir.</p>
+                    <p>Özetle || her iki değer false ise false döner. En az bir tane true ise true döner.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>&& (AND)</td>
+                <td>:</td>
+                <td>Her iki değerin true olduğu durumlarda true değeri döner. En az biri false ise false döner. Örnek: <code>true && true = true; false && true=false;</code>
+                <p>Ayrıca ilk falsy değeri bulmak içinde kullanılabilir.</p></td>
+            </tr>
+            <tr>
+                <td>! (NOT)</td>
+                <td>:</td>
+                <td>Boolean değerleri tersine çevirir. <code>!true=false; !false=true</code></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Javascript öğrenilebilecek web sayfaları: <a href="http://www.btkakademi.gov.tr" target="_blank">BTK Akademi</a> <a href="http://w3schools.com" target="_blank">W3Schools</a> <a href="https://developer.mozilla.org/tr/" target="_blank">MozlillaOrg</a> <a href="https://javascript.info/" target="_blank">Javascript.info</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

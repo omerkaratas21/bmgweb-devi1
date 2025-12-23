@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TASARIM</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="logo"><h4>WEB TASARIM</h4></div>
+        <ul class="nav-linkler">
+            <li><a href="index.html">HTML</a></li>
+            <li><a href="javas.html">JAVASCRIPT</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="hakkimda.html">HAKKIMDA</a></li>
+        </ul>
+        <div class="hakkimda">Kimim Ben???</div>
+        <div class="res-nav">
+            <div class="satir-1"></div>
+            <div class="satir-2"></div>
+            <div class="satir-3"></div>
+        </div>
+    </nav>
+    <div class="icerik container">
+        <h3>BAZI CSS SEÇİCİLER</h3>
+        <table>
+            <tr>
+                <td>.nav-link</td>
+                <td>:</td>
+                <td>nav-linkler sınıfına sahip bütün html elementlerini seçer. Örn: <code>&lt;div class="nav-linkler"&gt;</code></td>
+            </tr>
+            <tr>
+                <td>.c1.c2</td>
+                <td>:</td>
+                <td>c1 ve c2 sınıfına sahip tüm elementleri seçer. Örnek: <code>&lt;div class="c1 c2"&gt;</code></td>
+            </tr>
+            <tr>
+                <td>#test</td>
+                <td>:</td>
+                <td>id'si test olan elementi seçer. Örnek:<code>&lt;div id="test"&gt;</code></td>
+            </tr>
+            <tr>
+                <td>p,td, vs</td>
+                <td>:</td>
+                <td>Girlen değeri sağlayan tüm elementleri seçer. Örnek: p değeri girilmişse HTML dökümanındaki tüm <code>&lt;p&gt;</code> elementlerini seçer.</td>
+            </tr>
+            <tr>
+                <td>p.c1</td>
+                <td>:</td>
+                <td>c1 sınıfına sahip olan tüm p elementlerini seçer. Örnek:<code>&lt;p class="c1"&gt;</code></td>
+            </tr>
+        </table>
+        <h3>BAZI CSS ÖZELLİKLERİ</h3>
+        <table>
+            <tr>
+                <td>heigth, max-height</td>
+                <td>:</td>
+                <td>Sırasıyla elementin yüksekliği ve maximum yüksekliğini belirtir. Girilen değer pixel, oran cinsinden olabilir. Örnek: <code>height:300px; max-height:50vh</code></td>
+            </tr>
+            <tr>
+                <td>width, max-width</td>
+                <td>:</td>
+                <td>Sırasıyla elementing genişlik ve maximum genişliğini belirtir. Örnek: <code>width:100px; max-width:90%</code></td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>:</td>
+                <td>Elementin içeriğiyle çevreleyen kutu arasındaki boşluğu belirler. Tek değer girilirse üst,sağ,alt ve sol boşluğu belirler. Örnek: <code>padding:3px 3px 3px 3px;</code></td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>:</td>
+                <td>Elementin komşu elementlere olan boşluğunu belirler. Padding element içerisinde boşluk bırakırken margin element kutusu dışında boşluk bırakır. Kullanım şekli padding gibidir.</td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>:</td>
+                <td>Girilen metnin nasıl hizalanacağını gösterir. center, left, right ve justifiy değerlerini alabilir. Örnek: <code>text-align:justify;</code> metnin her iki yana yaslanmasını sağlar.</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>:</td>
+                <td>HTML elemanın sınırının nasıl olacağını belirler. Üç değer alır. border-width:çizgi kalınlığı, border-style:çizgi stili ve border-color çizgi rengini belirler. Örnek: <code>border: 2px solid red;</code></td>
+            </tr>
+            <tr>
+                <td>cursor</td>
+                <td>:</td>
+                <td>Elementin mouse şeklinin nasıl görüneceğini belirler. Alabileceği değerlerden bazıları: pointer, none, help move vb. Örnek: <code>cursor:pointer;</code></td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>:</td>
+                <td>Elemanın rengini belirler. Renk değeri tanımlı renklerden biri olabileceği rgb cinsinden de girilebilr. Örnek: <code>color:rgb(200,80,43);</code></td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>:</td>
+                <td>Elemanın nasıl görüneceğini belirler. Alacağı değerler: none,inline,block, inline-block. Örnek:<code>display:inline-block;</rnek:code></td>
+            </tr>
+            <tr>
+                <td>list-style-type</td>
+                <td>:</td>
+                <td>Listelerdeki stili belirlemek için kullanılır. daire, kare, roma rakamı, sayı vs olabilir. Örnek: <code>list-style-type:upper-roman;</code></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    CSS öğrenilebilecek web sayfaları: <a href="http://www.btkakademi.gov.tr" target="_blank">BTK Akademi</a> <a href="http://w3schools.com" target="_blank">W3Schools</a> <a href="http://css-tricks.com" target="_blank">CSS-Tricks</a> <a href="http://www.udacity.com" target="_blank">Udacity</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

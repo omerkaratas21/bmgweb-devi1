@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TASARIM</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="logo"><h4>WEB TASARIM</h4></div>
+        <ul class="nav-linkler">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="javas.html">JAVASCRIPT</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="hakkimda.html">HAKKIMDA</a></li>
+        </ul>
+        <div class="hakkimda">Kimim Ben???</div>
+        <div class="res-nav">
+            <div class="satir-1"></div>
+            <div class="satir-2"></div>
+            <div class="satir-3"></div>
+        </div>
+    </nav>
+    <div class="icerik container">
+        <h3>BAZI HTML TAGLARI</h3>
+        <table >
+            <tr>
+                <td>html</td>
+                <td>:</td>
+                <td>Web sayfasının tüm içeriği bu tagın içerisine yazılır. Kök olarak kullanılır. <code>&lt;html&gt;içerik&lt;/html&gt;.</code> İçerik kısmı head ve body den oluşur.</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>:</td>
+                <td>Sayfanın metadata sını tutmak için <code>&lt;html&gt; ve &lt;body&gt;</code> arasında bulunur. Belgenin başlığı, hangi karater kümesini kullanıcığı, sayfaya has stiller ve scriptler ile buna benzer diğer bilgiler bu tagın içerisine yazılır.</td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>:</td>
+                <td>Sayfanın son kullanıcıya gösterilen tüm bileşenleri bu tag içerisinde bulunur. Başlıklar, paragraflar, resimler, linkler, tablolar, listeler vb. gibi tüm elemanlar burada bulunur.</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>:</td>
+                <td>A tagı linkleri belirtir. Aynı web sitesindeki başka bir sayfaya gideceği gibi, herhangi bir web sayfasının linkide verilebilir.
+                    <p><code>&lt;a href="http://turkiye.gov.tr"&gt;E-Devlete Git&lt;/a&gt;</code> şeklinde yazılır.</p>
+                    <p>href içerisinde yazılan değer gidilecek sayfanın adresini belirtir.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td>:</td>
+                <td>HTML dökümanı içerisinde bir bölüm oluşturur. Görüntüye tek başına bir katkısı yoktur. Genelde stil veya javascript ile işlemler yapılmak için kullanılır. Web sayfalarında genelde en çok kullanılan tagdır.</td>
+            </tr>
+            <tr>
+                <td>h1-h6</td>
+                <td>:</td>
+                <td>Başlıkları belirtmek için kullanılır. &lt;h1&gt; en vurgulu (önemli) başlık tipiyken &lt;h6&gt; en vurgusuz (önemsiz) başlık tipidir. h2,h3,h4,h5 ise bu aralıklarda kullanılabilecek diğer başlıklardır.</td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>:</td>
+                <td>Dökümana resim eklemek için kullanılır. Resimli linkler için &lt;a&gt; tagının içerisine eklenir.
+                    <p><code>&lt;a href="turkiye.gov.tr"&gt;&lt;img src="test.jpg" alt="E-Devlet"/&gt;&lt;/a&gt;</code> Burada turkiye.gov.tr adresine gitmek için test.jpg üzerine tıklanır. src resmin adresini alt ise resim yüklenemesse gösterilecek metni belirtir.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>label</td>
+                <td>:</td>
+                <td>Genellikle form elementlerini göstermek için kullanılır. Checkbox gibi elementler tıklanması zor olduğu için label ile kullanılır. Label üzerine tıklandığında checkbox tıklanmış olur. Metin içerir.
+                    <p><code>&lt;label for="aktif"&gt;Aktif?&lt;/label&gt;&lt;input type="checkbox" id="aktif"&gt; </code> Labelin <strong>for</strong> özelliği ile <strong>id</strong>'si aktif olan elemente bağladık.</p>
+                </td>
+            </tr>
+            <tr><td>table</td>
+            <td>:</td>
+            <td>Tablolar bu tag ile oluşturulur. Tablo içinde tablo başlığı, tablo içeriği vs olabilir.
+                <p>Tablolar <code>&lt;caption&gt;,&lt;colgroup&gt;,&lt;thead&gt;,&lt;tfoot&gt;,&lt;tbody&gt;,&lt;tr&gt;,&lt;td&gt;,&lt;th&gt;</code> elementlerinden oluşur.</p>
+            </td></tr>
+            <tr>
+                <td>form</td>
+                <td>:</td>
+                <td>Kullanıcının veri gireceği ve daha sonra bu verinin sunucuya gönderileceği bir html elementi oluşturur. Formlara girilen veri tipleri elementlerle belirlenebilir.
+                    <p>Formda <code>&lt;input&gt;,&lt;textarea&gt;,&lt;button&gt;,&lt;select&gt;,&lt;option&gt;,&lt;label&gt;</code> gibi HTML elementleri bulunabilir.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>input</td>
+                <td>:</td>
+                <td>Formlarda veri girilmesi için en çok kullanılan elementtir. <code>&lt;input type="text" id="ad" name="ad" required/&gt;</code> şeklinde yazılabilir.
+                <p>type değeri veri tipini belirler. text,password, button, color, date, email, file, tel, image gibi bir çok değerden oluşabilir.</p></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    HTML öğrenilebilecek web sayfaları: <a href="http://www.btkakademi.gov.tr">BTK Akademi</a> <a href="http://w3schools.com">W3Schools</a> <a href="http://tutorialspoint.com">TutorialsPoint</a> <a href="http://www.udacity.com">Udacity</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+   <script src="./main.js"></script>
+</body>
+</html>

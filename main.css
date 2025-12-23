@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  background-color: #5f4555;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: #dfe4e2;
+  letter-spacing: 5px;
+}
+
+.nav-linkler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.nav-linkler a {
+  color: #dfe4e2;
+  text-decoration: none;
+}
+
+.nav-linkler li {
+  list-style-type: none;
+}
+
+.nav-linkler li:hover {
+  opacity: 0.8;
+}
+
+.hakkimda {
+  color: #dfe4e2;
+}
+
+.res-nav {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.icerik {
+  height: 92vh;
+  color: #5f4555;
+  background-color: #fafafa;
+  overflow-y: auto;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-linkler {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 92vh;
+    background-color: #5f4555;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .hakkimda {
+    display: none;
+  }
+  .res-nav {
+    display: block;
+    cursor: pointer;
+  }
+  .res-nav > div {
+    width: 30px;
+    height: 3px;
+    background-color: #dfe4e2;
+    margin: 3px;
+  }
+}
+
+.nav-aktif {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+table {
+  width: 100%;
+  padding: 0px 3px;
+}
+
+td {
+  padding: 10px 0;
+}
+
+td:last-child {
+  text-align: justify;
+  padding-left: 20px;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: left;
+  width: 100px;
+}
+
+td > a {
+  margin: 0px 20px;
+}
+
+.hakkimda-list {
+  text-align: justify;
+}
+
+.hakkimda-list ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.hakkimda-list ul li {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=main.css.map */
